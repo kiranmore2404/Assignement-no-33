@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" >
+    <title>Document</title>
+    <style>
+        page-heading
+{
+    text-align: center;
+    font-size: 35px;
+    color: #004d00;
+}
+.nav-family
+{
+    background-color: #003300;
+    color: white;
+    height: 30px;
+    margin: 5px;
+    padding: 5px;
+}
+.nav-ahref
+{
+    color: white;
+    text-decoration: none;
+    margin: 0px 50px;
+    font-size: 20px;
+}
+.nav-ahref:hover
+{
+    color: orange;
+}
+.login-btn
+{
+    background-color: orange;
+    color: black;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size:20px ;
+    margin-left: 640px;
+    margin-top: 20px;
+}
+.login-btn:hover
+{
+    color: white;
+}
+.gate-img
+{
+    width: 400px;
+    height: 300px;
+    margin-left: 490px;
+    margin-top: 20px;
+}
+.overlay
+{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.model
+{
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    position: relative;
+   
+    
+}
+.from{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.from-header
+{
+    text-align: center;
+}
+.from-input
+{
+    width: 300px;
+    margin: 10px 0;
+    font-size: 20px;
+    padding: 5px 10px;
+
+}
+.btn-login
+{
+    background-color: orange;
+    color: black;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size:20px ;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+.close-icon
+{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 40px;
+
+}
+    </style>
+</head>
+<body>
+    <h1 class="page-heading">GRADUATE APTITUDE TEST IN ENGINEERING 2025 <br>
+        Organising Institute: INDIAN INSTITUTE OF TECHNOLOGY ROORKEE</h1>
+
+        <nav class="nav-family">
+            <a href="" class="nav-ahref">Home</a>
+            <a href=""  class="nav-ahref">Gate Papers</a>
+            <a href=""  class="nav-ahref">Downloads</a>
+            <a href=""  class="nav-ahref">Exam Cities</a>
+            <a href=""  class="nav-ahref">Application</a>
+            <a href=""  class="nav-ahref">FAQ</a>
+            <a href=""  class="nav-ahref">Contact</a>
+            
+        </nav>
+        
+            <img src="./img/digital-einr-erupi-currency-technological-background-secure-digital-payment-vector_1017-46482.avif" alt="" class="gate-img">
+            
+                <button type="button" class="login-btn" onclick="openModel()">Login</button>
+            
+        </div>
+        <div class="overlay" id="overlay">
+            <div class="model">
+                <img src="./close.png" alt="" class="close-icon" onclick="closeModel()">
+                <form class="from">
+                    <h1 class="from-header">Login Now</h1>
+                    <input type="text" placeholder="Enter your name" class="from-input" id="">
+                    <input type="email" placeholder="Enter your email" class="from-input" id="">
+                    <input type="password" placeholder="Enter your password" class="from-input" id="">
+                    
+
+                </form>
+                <button type="button" class="btn-login">Login</button>
+                
+                    
+                    
+                
+
+            </div>
+            
+        </div>
+      
+
+</body>
+    
+<script>
+    function openModel()
+{
+    const overlayElement = document.getElementById('overlay');
+    overlayElement.style.display = 'flex';
+
+}
+function closeModel()
+{
+    const overlayElement = document.getElementById('overlay');
+    overlayElement.style.display = 'none';
+}
+</script>
+</html>
